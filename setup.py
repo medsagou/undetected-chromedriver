@@ -9,7 +9,7 @@ d88P"    888 "88b 888P"  d88""88b 888 "888 "88b d8P  Y8b d88" 888 888P"   888 88
 Y88b.    888  888 888    Y88..88P 888  888  888 Y8b.     Y88b 888 888     888  Y8bd8P  Y8b.     888
  "Y8888P 888  888 888     "Y88P"  888  888  888  "Y8888   "Y88888 888     888   Y88P    "Y8888  888   88888888
 
-BY ULTRAFUNKAMSTERDAM (https://github.com/ultrafunkamsterdam)"""
+BY ULTRAFUNKAMSTERDAM AND MODIFIED BY SAGOU (https://github.com/medsagou)"""
 
 import codecs
 import os
@@ -21,7 +21,7 @@ from setuptools import setup
 dirname = os.path.abspath(os.path.dirname(__file__))
 
 with codecs.open(
-    os.path.join(dirname, "undetected_chromedriver", "__init__.py"),
+    os.path.join(dirname, "undetected_chromedriver_modified_sagou", "__init__.py"),
     mode="r",
     encoding="utf-8",
 ) as fp:
@@ -37,15 +37,15 @@ description = (
 )
 
 setup(
-    name="undetected-chromedriver",
+    name="undetected-chromedriver-modified-sagou",
     version=version,
-    packages=["undetected_chromedriver"],
+    packages=["undetected_chromedriver_modified_sagou"],
     install_requires=[
         "selenium>=4.9.0",
         "requests",
         "websockets",
     ],
-    package_data={"undetected_chromedriver": [os.path.join("example", "example.py")]},
+    package_data={"undetected_chromedriver_modified_sagou": [os.path.join("example", "example.py")]},
     url="https://github.com/ultrafunkamsterdam/undetected-chromedriver",
     license="GPL-3.0",
     author="UltrafunkAmsterdam",
